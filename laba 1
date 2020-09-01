@@ -1,8 +1,121 @@
-public class dog 
-{
-public static void main(String args[]){
-int age = 15
-System.out.println(age.toString());
- System.out.println(int.toString(15));
+ class Dog 
+ { 
+	 String name ;
+	 int age  ;
  }
-}
+ class Ball 
+ {
+	 String type ;
+	 int size ; 
+ }
+ class Castle
+ {
+	 String location ;
+	 int height ;
+ }
+ class Tester
+ {
+	 boolean DogTestInt (Dog dog)
+	 {
+		 if(dog.age != 0)
+		 {
+			 System.out.println(dog.age);
+			 return true ;
+		 }
+		 else
+		 {
+			 System.out.println("Test failed");
+			 return false;
+		 }
+	 }
+	 boolean DogTestString (Dog dog)
+	 {
+		 if(!dog.name.isEmpty())
+		 {
+			 System.out.println(dog.name);
+			 return true ;
+		 }
+		 else
+		 {
+			 System.out.println("Test failed");
+			 return false;
+		 }
+	 }
+	 boolean BallTestInt (Ball ball)
+	 {
+		 if(ball.size != 0)
+		 {
+			 System.out.println(ball.size);
+			 return true ;
+		 }
+		 else
+		 {
+			 System.out.println("Test failed");
+			 return false;
+		 }
+	 }
+	 boolean BallTestString (Ball ball)
+	 {
+		 if(!ball.type.isEmpty())
+		 {
+			 System.out.println(ball.type);
+			 return true ;
+		 }
+		 else
+		 {
+			 System.out.println("Test failed");
+			 return false;
+		 }
+	 }
+	 boolean CastleTestInt (Castle castle)
+	 {
+		 if(castle.height != 0)
+		 {
+			 System.out.println(castle.height);
+			 return true ;
+		 }
+		 else
+		 {
+			 System.out.println("Test failed");
+			 return false;
+		 }
+	 }
+	 boolean CastleTestString (Castle castle)
+	 {
+		 if(!castle.location.isEmpty())
+		 {
+			 System.out.println(castle.location);
+			 return true ;
+		 }
+		 else
+		 {
+			 System.out.println("Test failed");
+			 return false;
+		 }
+	 }
+ }
+ public class prl 
+ {
+	 public static void main(String[] args)
+	 {
+		 Tester test = new Tester();
+		 Dog Rex = new Dog();
+		 Rex.name = "Rex" ;
+		 Rex.age = 15 ;
+		 Ball Beach = new Ball() ;
+		 Beach.type = "Beach" ;
+		 Beach.size = 7 ;
+		 Castle Norwich = new Castle() ;
+		 Norwich.location = "England , London" ;
+		 Norwich.height = 55 ;
+		 Rex.name.toString() ;
+		 Beach.type.toString() ;
+		 Norwich.location.toString();
+		 test.DogTestInt(Rex) ;
+		 test.DogTestString(Rex) ;
+		 test.BallTestInt(Beach) ;
+		 test.BallTestString(Beach) ;
+		 test.CastleTestInt(Norwich) ;
+		 test.CastleTestString(Norwich) ;
+	 }
+ }
