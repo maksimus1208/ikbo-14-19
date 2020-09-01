@@ -3,6 +3,6 @@ public class dog
 public static void main(String args[]){
 int age = 15
 System.out.println(age.toString());
- System.out.println(int.toString(12));
+ System.out.println(int.toString(15));
  }
 }
