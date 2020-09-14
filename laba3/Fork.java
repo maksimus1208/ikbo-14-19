@@ -1,4 +1,4 @@
-package laba3;
+package laba3ex1;
 
 public class Fork extends Dish {
     private int length;
