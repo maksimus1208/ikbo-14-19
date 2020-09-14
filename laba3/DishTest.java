@@ -1,4 +1,4 @@
-package laba3;
+package laba3ex1;
 
 public class DishTest {
     public static void main(String[] args) {
