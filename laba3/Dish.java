@@ -1,4 +1,4 @@
-package laba3 ;
+package laba3ex1 ;
 public abstract class Dish {
     private String type;
     private boolean clean;
